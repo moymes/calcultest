@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>electro</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Calculateur de facture</h1>
+    <div id="articlesContainer">
+      <div class="article">
+        <div class="input-group">
+          <label for="prix_article_1">Prix de l'article 1 :</label>
+          <input type="number" id="prix_article_1" min="0" style="flex: 3;">
+          <label for="rabais_1">% rabais :</label>
+          <input type="number" id="rabais_1" min="0" placeholder="" style="flex: 1;">
+        </div>
+      </div>
+    </div>
+
+    <button id="ajouterArticleBtn" class="btn btn-primary">Ajouter un article</button>
+
+    <label for="livraison">Montant de livraison :</label>
+    <select id="livraison" class="input-select">
+      <option value="0">Gratuit</option>
+      <option value="59">59 $</option>
+      <option value="79">79 $</option>
+      <option value="89">89 $</option>
+      <option value="119">119 $</option>
+    </select>
+
+    <button id="calculerBtn" class="btn btn-success">Calculer</button>
+
+    <div id="resultat"></div>
+  </div>
+  <script src="script.js"></script>
+  <script src="soum.js"></script>
+</body>
+</html>
